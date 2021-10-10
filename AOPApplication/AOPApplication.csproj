@@ -71,13 +71,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\CustomException.cs" />
     <Compile Include="Infrastructure\CacheMethodAttribute.cs" />
+    <Compile Include="Infrastructure\LoggerAttribute.cs" />
     <Compile Include="Interceptors\CacheInterceptor.cs" />
     <Compile Include="Interceptors\LoggingInterceptor.cs" />
     <Compile Include="Services\IMyService.cs" />
     <Compile Include="Services\MyService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\MyService2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
