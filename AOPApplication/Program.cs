@@ -25,9 +25,12 @@ namespace AOPApplication
             // **************************************************
 
             // **************************************************
+            //kernel
+            //    .Bind<IMyService>().To<MyService>()
+            //    .Intercept().With<CacheInterceptor>();  
             kernel
-                .Bind<IMyService>().To<MyService>()
-                .Intercept().With<CacheInterceptor>();
+                .Bind<IMyService>().To<MyService2>()
+                .Intercept().With<LoggerInterceptor>();
 
             var myService = kernel.Get<IMyService>();
 
